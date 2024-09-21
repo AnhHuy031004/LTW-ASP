@@ -8239,11 +8239,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LTW-ASP\\ASP-Web\\BaiTap07\\BaiTap07.csproj",
+      "projectUniqueName": "C:\\Users\\Huy\\Downloads\\BaiTap07\\BaiTap07.csproj",
       "projectName": "BaiTap07",
-      "projectPath": "D:\\LTW-ASP\\ASP-Web\\BaiTap07\\BaiTap07.csproj",
+      "projectPath": "C:\\Users\\Huy\\Downloads\\BaiTap07\\BaiTap07.csproj",
       "packagesPath": "C:\\Users\\Huy\\.nuget\\packages\\",
-      "outputPath": "D:\\LTW-ASP\\ASP-Web\\BaiTap07\\obj\\",
+      "outputPath": "C:\\Users\\Huy\\Downloads\\BaiTap07\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Huy\\AppData\\Roaming\\NuGet\\NuGet.Config",

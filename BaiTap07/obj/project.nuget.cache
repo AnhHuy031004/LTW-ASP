@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rSRmH6YjcKM=",
+  "dgSpecHash": "8CIVZbETQuo=",
   "success": true,
-  "projectFilePath": "D:\\LTW-ASP\\ASP-Web\\BaiTap07\\BaiTap07.csproj",
+  "projectFilePath": "C:\\Users\\Huy\\Downloads\\BaiTap07\\BaiTap07.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Huy\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Huy\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
