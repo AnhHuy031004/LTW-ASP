@@ -1,0 +1,24 @@
+﻿@model TheLoai
+<div class="container">
+    <h3>Thông Tin Thể Loại</h3>
+    <form method="post" asp-action="Detail">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Name">Tên Thể Loại</label>
+            <p class="form-control-static">@Model.Name</p>
+       
+        </div>
+        <div class="form-group">
+            <label asp-for="DateCreated">Ngày Tạo</label>
+            <p class="form-control-static">@Model.DateCreated.ToString("yyyy-MM-dd")</p>
+        </div>
+        <a asp-action="Index" class="btn btn-secondary">Trở Lại</a>
+
+    </form>
+</div>
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
+

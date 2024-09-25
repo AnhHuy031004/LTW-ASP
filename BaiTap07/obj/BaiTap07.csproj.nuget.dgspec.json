@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Huy\\Downloads\\BaiTap07\\BaiTap07.csproj": {}
+    "D:\\LTW-ASP\\LTW-ASP\\BaiTap07\\BaiTap07.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Huy\\Downloads\\BaiTap07\\BaiTap07.csproj": {
+    "D:\\LTW-ASP\\LTW-ASP\\BaiTap07\\BaiTap07.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Huy\\Downloads\\BaiTap07\\BaiTap07.csproj",
+        "projectUniqueName": "D:\\LTW-ASP\\LTW-ASP\\BaiTap07\\BaiTap07.csproj",
         "projectName": "BaiTap07",
-        "projectPath": "C:\\Users\\Huy\\Downloads\\BaiTap07\\BaiTap07.csproj",
+        "projectPath": "D:\\LTW-ASP\\LTW-ASP\\BaiTap07\\BaiTap07.csproj",
         "packagesPath": "C:\\Users\\Huy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Huy\\Downloads\\BaiTap07\\obj\\",
+        "outputPath": "D:\\LTW-ASP\\LTW-ASP\\BaiTap07\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Huy\\AppData\\Roaming\\NuGet\\NuGet.Config",

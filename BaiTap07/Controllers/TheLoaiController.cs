@@ -15,7 +15,7 @@ namespace BaiTap07.Controllers
         public IActionResult Index()
         {
             var theloai = _db.TheLoai.ToList();
-            ViewBag.TheLoai = theloai;  
+            ViewBag.TheLoai = theloai;
 
             return View();
         }
@@ -91,7 +91,7 @@ namespace BaiTap07.Controllers
         [HttpGet]
         public IActionResult Detail(int id)
         {
-         
+
 
             var theloai = _db.TheLoai.Find(id);
             if (theloai == null)
@@ -101,5 +101,24 @@ namespace BaiTap07.Controllers
 
             return View(theloai);
         }
+        [HttpGet]
+        public IActionResult Search(string searchString)
+        {
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                //Sử Dụng LINQ
+                var theloai = _db.TheLoai.
+                    Where(tl => tl.Name.Contains( searchString)).ToList();
+                ViewBag.searchString = searchString;
+                ViewBag.TheLoai = theloai;
+
+            }
+            else
+            {
+                var theloai = _db.TheLoai.ToList();
+                ViewBag.TheLoai = theloai;
+            }
+            return View("Index");
+        }
     }
-}
+    }
