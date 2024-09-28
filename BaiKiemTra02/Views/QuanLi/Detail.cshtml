@@ -1,0 +1,33 @@
+﻿@model QuanLi
+<div class="container">
+    <h3>Thông Tin </h3>
+    <form method="post" asp-action="Detail">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Name">Tên Lớp Học</label>
+            <p class="form-control-static">@Model.Name</p>
+       
+        </div>
+        <div class="form-group">
+            <label asp-for="Datejoin">Ngày Tạo</label>
+            <p class="form-control-static">@Model.Datejoin.ToString("yyyy")</p>
+        </div>
+        <div class="form-group">
+            <label asp-for="Dateout">Ngày Tạo</label>
+            <p class="form-control-static">@Model.Dateout.ToString("yyyy")</p>
+        </div>
+        <div class="form-group">
+            <label asp-for="SoLuongSinhVien">Số Lượng Sinh Viên</label>
+            <p class="form-control-static">@Model.SoLuongSinhVien</p>
+
+        </div>
+        <a asp-action="Index" class="btn btn-secondary">Trở Lại</a>
+        
+    </form>
+</div>
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
+

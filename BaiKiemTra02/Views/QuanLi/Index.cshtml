@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container">
+    <form asp-action="Search" method="get">
+        <input type="text" name="searchString" placeholder="Nhập Tên Lớp Học..." value="@ViewBag.searchString" />
+        <input type="submit" value="Tìm Kiếm" />
+    </form>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Tên Lớp Học</th>
+                <th> Năm Nhập Học</th>
+                <th>Năm Ra Trường</th>
+                <th>Số Lượng Sinh Viên</th>
+                <th>Chức năng</th>
+            </tr>
+        </thead>
+        @foreach (var item in ViewBag.QuanLi)
+        {
+            <tbody>
+                <tr>
+                    <td width="10%">@item.Id</td>
+                    <td width="20%">@item.Name</td>
+                    <td width="10%">@String.Format("{0:yyyy}", item.Datejoin)</td>
+                    <td width="10%">@String.Format("{0:yyyy}", item.Dateout)</td>
+                    <td width="20%">@item.SoLuongSinhVien</td>
+                    <td width="40%">
+                        <a asp-action="Edit" asp-route-id="@item.Id">
+                            Edit
+                        </a> |
+                        <a asp-action="Detail" asp-route-id="@item.Id">
+                            Detail
+                        </a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">
+                            Delete
+                        </a>
+
+                </tr>
+            </tbody>
+        }
+    </table>
+    <a asp-controller="QuanLi" asp-action="Create" class="btn btn-primary">Thêm mới</a>
+</div>

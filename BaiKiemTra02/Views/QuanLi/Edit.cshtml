@@ -1,0 +1,35 @@
+﻿@model QuanLi
+<div class="container">
+    <h3>Chỉnh Sửa Thông Tin</h3>
+    <form method="post" asp-action="Edit">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Name">Tên Lớp Học</label>
+            <input asp-for="Name" type="text" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Datejoin">Năm Nhập Học</label>
+            <input asp-for="Datejoin" type="date" class="form-control" />
+            <span asp-validation-for="Datejoin" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Dateout">Năm Ra Trường</label>
+            <input asp-for="Dateout" type="date" class="form-control" />
+            <span asp-validation-for="Dateout" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="SoLuongSinhVien">Số Lượng Sinh Viên</label>
+            <input asp-for="SoLuongSinhVien" type="number" class="form-control" />
+            <span asp-validation-for="SoLuongSinhVien" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Cập nhật</button>
+
+    </form>
+</div>
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
+
