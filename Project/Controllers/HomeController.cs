@@ -23,7 +23,12 @@ namespace Project.Controllers
 
             return View(sanpham);
         }
+        public IActionResult Details(int id)
+        {
+            SanPham sanpham = _db.SanPham.Include(sp => sp.TheLoai).FirstOrDefault(sp => sp.Id == id);
+            return View(sanpham);
 
+        }
         public IActionResult Privacy()
         {
             return View();
