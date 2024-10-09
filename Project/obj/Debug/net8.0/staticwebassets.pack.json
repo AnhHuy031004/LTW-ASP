@@ -13,6 +13,34 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\LTW-ASP\\LTW-ASP\\Project\\wwwroot\\img\\bg-masthead.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-masthead.jpg"
+    },
+    {
+      "Id": "D:\\LTW-ASP\\LTW-ASP\\Project\\wwwroot\\img\\bg-showcase-1.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-showcase-1.jpg"
+    },
+    {
+      "Id": "D:\\LTW-ASP\\LTW-ASP\\Project\\wwwroot\\img\\bg-showcase-2.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-showcase-2.jpg"
+    },
+    {
+      "Id": "D:\\LTW-ASP\\LTW-ASP\\Project\\wwwroot\\img\\bg-showcase-3.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-showcase-3.jpg"
+    },
+    {
+      "Id": "D:\\LTW-ASP\\LTW-ASP\\Project\\wwwroot\\img\\testimonials-1.jpg",
+      "PackagePath": "staticwebassets\\img\\testimonials-1.jpg"
+    },
+    {
+      "Id": "D:\\LTW-ASP\\LTW-ASP\\Project\\wwwroot\\img\\testimonials-2.jpg",
+      "PackagePath": "staticwebassets\\img\\testimonials-2.jpg"
+    },
+    {
+      "Id": "D:\\LTW-ASP\\LTW-ASP\\Project\\wwwroot\\img\\testimonials-3.jpg",
+      "PackagePath": "staticwebassets\\img\\testimonials-3.jpg"
+    },
+    {
       "Id": "D:\\LTW-ASP\\LTW-ASP\\Project\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

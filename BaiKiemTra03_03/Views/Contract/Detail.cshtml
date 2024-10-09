@@ -1,0 +1,35 @@
+﻿@model Contract
+<div class="container">
+    <h3>Thông Tin </h3>
+    <form method="post" asp-action="Detail">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Name">Tên hợp đồng</label>
+            <input asp-for="Name" type="text" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="DateCreated">Ngày Kí Kết</label>
+            <input asp-for="DateCreated" type="date" class="form-control" />
+            <span asp-validation-for="DateCreated" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Customer">Khách Hàng</label>
+            <input asp-for="Customer" type="date" class="form-control" />
+            <span asp-validation-for="Customer" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="value">Giá Trị</label>
+            <input asp-for="value" type="date" class="form-control" />
+            <span asp-validation-for="value" class="text-danger"></span>
+        </div>
+        <a asp-action="Index" class="btn btn-secondary">Trở Lại</a>
+
+    </form>
+</div>
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
+
